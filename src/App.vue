@@ -1,17 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<input type="text" size="50" v-model="zielEingabe">
+<button>Neu</button>
+<h2>TODO</h2>
+<p>
+  <input type="radio" name="zielSelect" value="1">JavaScriptLernen
+</p>
+<button>Delete</button>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: 'ToDo',
+  props: {msg: String},
+  datat: function(){
+    return { }
+  },
+  methods: {
+    neuZiel(){ },
+    deleteZiel(){ }
   }
 }
 </script>
