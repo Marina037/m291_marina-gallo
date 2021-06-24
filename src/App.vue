@@ -12,7 +12,7 @@
 export default {
   name: 'ToDo',
   props: {msg: String},
-  datat: function(){
+  datat: function (){
     return { }
   },
   methods: {
